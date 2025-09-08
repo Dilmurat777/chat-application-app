@@ -1,0 +1,94 @@
+.lsb {
+	background: #001030;
+	height: 75vh;
+	color: white;
+}
+
+.lsb-top {
+	padding: 20px;
+}
+
+.lsb-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.lsb-nav .logo {
+	max-width: 140px;
+}
+
+.lsb-nav .menu img{
+	max-height: 20px;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.lsb-search {
+	background-color: #002670;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 12px;
+	margin-top: 20px;
+}
+
+.lsb-search img {
+	max-height: 20px;
+	opacity: 0.7;
+}
+
+.lsb-search input {
+	width: 100%;
+	border: none;
+	outline: none;
+	background: transparent;
+	color: white;
+	font-size: 11px;
+}
+
+.lsb-search input::placeholder {
+	color: white;
+	opacity: 0.6;
+}
+
+.lsb-list {
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+	overflow-y: scroll;
+}
+
+.lsb-friends img {
+	width: 35px;
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
+
+.lsb-friends {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 13px;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+.lsb-friends div {
+	display: flex;
+	flex-direction: column;
+}
+
+.lsb-friends div span {
+	font-size: 11px;
+	color: #9f9f9f;
+}
+
+.lsb-friends:hover {
+	background: #077eff;
+}
+
+.lsb-friends:hover span {
+	color: white;
+}
