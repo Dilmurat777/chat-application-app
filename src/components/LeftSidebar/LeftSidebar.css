@@ -1,94 +1,128 @@
 .lsb {
-	background: #001030;
-	height: 75vh;
-	color: white;
+  background: #001030;
+  height: 75vh;
+  color: white;
 }
 
 .lsb-top {
-	padding: 20px;
+  padding: 20px;
 }
 
 .lsb-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .lsb-nav .logo {
-	max-width: 140px;
+  max-width: 140px;
 }
 
-.lsb-nav .menu img{
-	max-height: 20px;
-	opacity: 0.6;
-	cursor: pointer;
+.lsb-nav .menu img {
+  max-height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .lsb-search {
-	background-color: #002670;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	padding: 10px 12px;
-	margin-top: 20px;
+  background-color: #002670;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  margin-top: 20px;
 }
 
 .lsb-search img {
-	max-height: 20px;
-	opacity: 0.7;
+  max-height: 20px;
+  opacity: 0.7;
 }
 
 .lsb-search input {
-	width: 100%;
-	border: none;
-	outline: none;
-	background: transparent;
-	color: white;
-	font-size: 11px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 11px;
 }
 
 .lsb-search input::placeholder {
-	color: white;
-	opacity: 0.6;
+  color: white;
+  opacity: 0.6;
 }
 
 .lsb-list {
-	display: flex;
-	flex-direction: column;
-	height: 70%;
-	overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  overflow-y: scroll;
 }
 
 .lsb-friends img {
-	width: 35px;
-	border-radius: 50%;
-	aspect-ratio: 1/1;
-	object-fit: cover;
+  width: 35px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .lsb-friends {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	font-size: 13px;
-	cursor: pointer;
-	padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 10px 20px;
 }
 
 .lsb-friends div {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .lsb-friends div span {
-	font-size: 11px;
-	color: #9f9f9f;
+  font-size: 11px;
+  color: #9f9f9f;
 }
 
 .lsb-friends:hover {
-	background: #077eff;
+  background: #077eff;
 }
 
 .lsb-friends:hover span {
-	color: white;
+  color: white;
+}
+
+.lsb-nav .menu {
+  position: relative;
+  padding: 10px 0;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 130px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  display: none;
+}
+
+
+.sub-menu hr {
+	border: none;
+	height: 1px;
+	background: #a4a4a4;
+	margin: 8px 0;
+}
+
+.sub-menu p {
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.menu:hover .sub-menu {
+	display: block;
 }
